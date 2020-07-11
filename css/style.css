@@ -1,0 +1,88 @@
+/* Variables */
+
+:root {
+  --white: #FFFFFF;
+  --black :#000000;
+
+  --main-bg: var(--white);
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Oswald Regular"), local("Oswald-Regular"),
+       url("../fonts/oswald-regular.woff2") format("woff2"),
+       url("../fonts/oswald-regular.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Oswald Medium"), local("Oswald-Medium"),
+       url("../fonts/oswald-medium.woff2") format("woff2"),
+       url("../fonts/oswald-medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Source Sans Pro Regular"), local("SourceSansPro-Regular"),
+       url("../fonts/source-sans-pro-regular.woff2") format("woff2"),
+       url("../fonts/source-sans-pro-regular.woff") format("woff");
+}
+
+/* Global */
+
+body {
+  min-width: 1520px;
+  padding: 0;
+  font-family: "Cuprum", Arial, sans-serif;
+  color: var(--basic-navi);
+  background-color: var(--main-bg);
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  width: 1492px;
+  margin: 0 auto;
+  padding: 0 14px;
+}
+
+/* Grid */
+
+.page {
+  height: 100%;
+}
+
+.page-body {
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+}
+
+  
