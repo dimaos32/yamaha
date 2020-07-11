@@ -11,26 +11,29 @@
 
 <header class="main-header">
   <div class="container">
-    <a class="main-logo" href="#" aria-label="Yamaha Street Logotype">
-      <img src="img/main-logo.svg" alt="Yamaha Street Logotype" width="100" height="100">
-    </a>
-    
     <nav class="main-navigation">
+      <a class="main-logo" href="#" aria-label="Yamaha Street Logotype">
+        <img src="img/main-logo.png" alt="Yamaha Street Logotype" width="100" height="100">
+      </a>
+
       <ul class="motorcycle-types-list">
-        <li><a  class="motorcycle-types-item current" href="#">Supersport</a></li>
-        <li><a  class="motorcycle-types-item" href="#">Supersport Touring</a></li>
-        <li><a  class="motorcycle-types-item" href="#">Sport</a></li>
-        <li><a  class="motorcycle-types-item" href="#">Dual Sport</a></li>
+        <li class="motorcycle-types-item"><a class="current" href="#">Supersport</a></li>
+        <li class="motorcycle-types-item"><a href="#">Supersport Touring</a></li>
+        <li class="motorcycle-types-item"><a href="#">Sport</a></li>
+        <li class="motorcycle-types-item"><a href="#">Dual Sport</a></li>
       </ul>
   
       <ul class="site-menu-list">
-        <li><a class="site-menu-item" href="#">Find a Dealer</a></li>
-        <li><a class="site-menu-item" href="#">My Yamaha Login/Signup</a></li>
-        <li><a class="site-menu-item" href="#">Events & Demos</a></li>
-        <li>
-          <a href="#">
-            <img src="#" alt="Search">
-          </a>
+        <li class="site-menu-item"><a href="#">Find a Dealer</a></li>
+        <li class="site-menu-item"><a href="#">My Yamaha Login/Signup</a></li>
+        <li class="site-menu-item"><a href="#">Events & Demos</a></li>
+        <li class="site-menu-item header-search">
+          <a href="#" aria-label="Search"></a>
+          <form class="header-search-form" action="https://echo.htmlacademy.ru/" method="POST">
+            <label class="visually-hidden" for="header-search-input">Enter a request:</label>
+          <input class="header-search-input" name="header-search-input" id="header-search-input" type="search" placeholder="Поиск по сайту">
+          <button type="submit">Search</button>
+          </form>
         </li>
       </ul>
     </nav>
@@ -38,136 +41,140 @@
 </header>
 
 <main>
-  <section class="motorcycles-catalog">
-    <div class="container">
-      <ul class="motorcycles-catalog-list motorcycle-type-supersport">
-        <li class="motorcycles-catalog-item">
-          <a href="">
-            <img src="" alt="2016 YZF-R1M" width="157" height="90">
-          </a>
-        </li>
-        <li class="motorcycles-catalog-item">
-          <a href="">
-            <img src="" alt="2016 YZF-R1" width="161" height="90">
-          </a>
-        </li>
-        <li class="motorcycles-catalog-item">
-          <a href="">
-            <img src="" alt="2016 YZF-R1S" width="157" height="90">
-          </a>
-        </li>
-        <li class="motorcycles-catalog-item">
-          <a href="">
-            <img src="" alt="2016 YZF-R6" width="161" height="89">
-          </a>
-        </li>
-        <li class="motorcycles-catalog-item">
-          <a href="">
-            <img src="" alt="2016 YZF-R3" width="162" height="92">
-          </a>
-        </li>
-      </ul> 
-    </div>
-  </section>
 
-  <section class="motorcycle-about">
-    <div class="container">
-      <article class="motorcycle-card">
-        <div class="motorcycle-summary">
-          <div class="motorcycle-preview">
-            <img src="" alt="2016 YZF-R1M" width="759" height="505">
-            <button class="btn-look btn-look-up" type="button" aria-label="Look Up"></button>
-            <button class="btn-look btn-look-left" type="button" aria-label="Look Left"></button>
-            <button class="btn-look btn-look-right" type="button" aria-label="Look right"></button>
-          </div>
-          <div class="motorcycle-model">
-            <h2>YZF‑R1</h2>
-            <ul class="motorcycle-model-year">
-              <li><a class="current" href="#">2016</a></li>
-              <li><a href="#">2015</a></li>
-            </ul>
-          </div>
-          <p class="motorcycle-price-prefix">Starting at</p>
-          <p class="motorcycle-price">$16,490</p>
-          <div class="motorcycle-model-color">
-            <a class="blue-grey current" href="#" aria-label="blue and grey color"></a>
-            <a class="wet-asphalt-grey" href="#" aria-label="wet asphalt and grey color"></a>
-            <a class="yellow-wet-asphalt" href="#" aria-label="yellow and wet asphalt color"></a>
-          </div>
-          <p>The YZF-R1<sup>&reg;</sup> features a lightweight and compact crossplane-crankshaft, inline-four-cylinder, 998cc high output engine. The first ever for a production motorcycle—the motor delivers extremely high horsepower and a strong pulse of linear torque for outstanding performance.</p>
-          <div class="motorcycle-actions">
-            <a class="btn" href="#">Find a Dealer</a>
-            <a class="btn" href="#">Download Specs</a>
-          </div>
+<h1 class="visually-hidden">Yamaha Street</h1>
+
+<section class="motorcycles-catalog">
+  <div class="container">
+    <ul class="motorcycles-catalog-list motorcycle-type-supersport">
+      <li class="motorcycles-catalog-item">
+        <a href="">
+          <img src="" alt="2016 YZF-R1M" width="157" height="90">
+        </a>
+      </li>
+      <li class="motorcycles-catalog-item">
+        <a href="">
+          <img src="" alt="2016 YZF-R1" width="161" height="90">
+        </a>
+      </li>
+      <li class="motorcycles-catalog-item">
+        <a href="">
+          <img src="" alt="2016 YZF-R1S" width="157" height="90">
+        </a>
+      </li>
+      <li class="motorcycles-catalog-item">
+        <a href="">
+          <img src="" alt="2016 YZF-R6" width="161" height="89">
+        </a>
+      </li>
+      <li class="motorcycles-catalog-item">
+        <a href="">
+          <img src="" alt="2016 YZF-R3" width="162" height="92">
+        </a>
+      </li>
+    </ul> 
+  </div>
+</section>
+
+<section class="motorcycle-about">
+  <div class="container">
+    <article class="motorcycle-card">
+      <div class="motorcycle-summary">
+        <div class="motorcycle-preview">
+          <img src="" alt="2016 YZF-R1M" width="759" height="505">
+          <button class="btn-look btn-look-up" type="button" aria-label="Look Up"></button>
+          <button class="btn-look btn-look-left" type="button" aria-label="Look Left"></button>
+          <button class="btn-look btn-look-right" type="button" aria-label="Look right"></button>
         </div>
-
-        <div class="motorcycle-features">
-          <ul class="motorcycle-features-list">
-            <li><a class="motorcycle-features-item" href="#">Key Features</a></li>
-            <li><a class="motorcycle-features-item" href="#">Power</a></li>
-            <li><a class="motorcycle-features-item" href="#">Specs</a></li>
-            <li><a class="motorcycle-features-item" href="#">Speed</a></li>
-            <li><a class="motorcycle-features-item" href="#">Life</a></li>
+        <div class="motorcycle-model">
+          <h2>YZF‑R1</h2>
+          <ul class="motorcycle-model-year">
+            <li><a class="current" href="#">2016</a></li>
+            <li><a href="#">2015</a></li>
           </ul>
-
-          <h3>Cutting-edge Crossplane Engine</h3>
-          <p>The 998cc in-line 4-cylinder, crossplane crankshaft engine features titanium fracture-split connecting rods, which are an industry first for a production motorcycle.</p>
-          <h3>Compact Stacked Transmission</h3>
-          <p>A 6-speed transmission has also been adopted to match the new engine. The transmission "stacks" the input/output shafts to centralize mass and to keep the overall engine size shorter front to back, which optimizes engine placement in the frame for outstanding weight balance.</p>
         </div>
-      </article>
-    </div>
-  </section>
+        <p class="motorcycle-price-prefix">Starting at</p>
+        <p class="motorcycle-price">$16,490</p>
+        <div class="motorcycle-model-color">
+          <a class="blue-grey current" href="#" aria-label="blue and grey color"></a>
+          <a class="wet-asphalt-grey" href="#" aria-label="wet asphalt and grey color"></a>
+          <a class="yellow-wet-asphalt" href="#" aria-label="yellow and wet asphalt color"></a>
+        </div>
+        <p>The YZF-R1<sup>&reg;</sup> features a lightweight and compact crossplane-crankshaft, inline-four-cylinder, 998cc high output engine. The first ever for a production motorcycle—the motor delivers extremely high horsepower and a strong pulse of linear torque for outstanding performance.</p>
+        <div class="motorcycle-actions">
+          <a class="btn" href="#">Find a Dealer</a>
+          <a class="btn" href="#">Download Specs</a>
+        </div>
+      </div>
 
-  <section class="gallery">
-    <div class="container">
-      <img class="photo photo-best" src="" alt="motorcycle on the track comes turn" width="791" height="514">
-      <img class="photo" src="" alt="motorcycle steering panel" width="351" height="257">
-      <img class="photo" src="" alt="motorcycle rear wheel" width="351" height="257">
-      <img class="photo" src="" alt="motorcycle on the track" width="350" height="257">
-      <img class="photo" src="" alt="motorcycle on the track" width="350" height="257">
-    </div>
-  </section>
+      <div class="motorcycle-features">
+        <ul class="motorcycle-features-list">
+          <li><a class="motorcycle-features-item" href="#">Key Features</a></li>
+          <li><a class="motorcycle-features-item" href="#">Power</a></li>
+          <li><a class="motorcycle-features-item" href="#">Specs</a></li>
+          <li><a class="motorcycle-features-item" href="#">Speed</a></li>
+          <li><a class="motorcycle-features-item" href="#">Life</a></li>
+        </ul>
 
-  <section class="360deg-view">
-    <div class="container">
-      <img src="" alt="3D viewport" width="840" height="559">
-      <p>360° view</p>
-    </div>
-  </section>
+        <h3>Cutting-edge Crossplane Engine</h3>
+        <p>The 998cc in-line 4-cylinder, crossplane crankshaft engine features titanium fracture-split connecting rods, which are an industry first for a production motorcycle.</p>
+        <h3>Compact Stacked Transmission</h3>
+        <p>A 6-speed transmission has also been adopted to match the new engine. The transmission "stacks" the input/output shafts to centralize mass and to keep the overall engine size shorter front to back, which optimizes engine placement in the frame for outstanding weight balance.</p>
+      </div>
+    </article>
+  </div>
+</section>
 
-  <section class="extras-catalog">
-    <ul class="accessories-list">
-      <li class="accessories-item><a href="#">Deltabox<sup>&reg;</sup> Frame</a></li>
-      <li class="accessories-item><a href="#">Linkage-type KYB<sup>&reg;</sup> Shock</a></li>
-      <li class="accessories-item><a href="#">MotoGP<sup>&reg;</sup> developed SCS</a></li>
-      <li class="accessories-item><a href="#">MotoGP<sup>&reg;</sup> Styling</a></li>
-    </ul>
+<section class="gallery">
+  <div class="container">
+    <img class="photo photo-best" src="" alt="motorcycle on the track comes turn" width="791" height="514">
+    <img class="photo" src="" alt="motorcycle steering panel" width="351" height="257">
+    <img class="photo" src="" alt="motorcycle rear wheel" width="351" height="257">
+    <img class="photo" src="" alt="motorcycle on the track" width="350" height="257">
+    <img class="photo" src="" alt="motorcycle on the track" width="350" height="257">
+  </div>
+</section>
 
-    <ul class="equipment-list">
-      <li class="equipment-item">
-        <a href="#">
-          <img src="" alt="Gloves" width="152" height="152">
-          <p>Gloves</p>
-          <p class="equitment-price">$24.99</p>
-        </a>
-      </li>
-      <li class="equipment-item">
-        <a href="#">
-          <img src="" alt="Jacket" width="203" height="203">
-          <p>Jacket</p>
-          <p class="equitment-price">$199.99</p>
-        </a>
-      </li>
-      <li class="equipment-item">
-        <a href="#">
-          <img src="" alt="Helmet" width="173" height="173">
-          <p>Helmet</p>
-          <p class="equitment-price">$159.99</p>
-        </a>
-      </li>
-    </ul>
-  </section>
+<section class="360deg-view">
+  <div class="container">
+    <img src="" alt="3D viewport" width="840" height="559">
+    <p>360° view</p>
+  </div>
+</section>
+
+<section class="extras-catalog">
+  <ul class="accessories-list">
+    <li class="accessories-item><a href="#">Deltabox<sup>&reg;</sup> Frame</a></li>
+    <li class="accessories-item><a href="#">Linkage-type KYB<sup>&reg;</sup> Shock</a></li>
+    <li class="accessories-item><a href="#">MotoGP<sup>&reg;</sup> developed SCS</a></li>
+    <li class="accessories-item><a href="#">MotoGP<sup>&reg;</sup> Styling</a></li>
+  </ul>
+
+  <ul class="equipment-list">
+    <li class="equipment-item">
+      <a href="#">
+        <img src="" alt="Gloves" width="152" height="152">
+        <p>Gloves</p>
+        <p class="equitment-price">$24.99</p>
+      </a>
+    </li>
+    <li class="equipment-item">
+      <a href="#">
+        <img src="" alt="Jacket" width="203" height="203">
+        <p>Jacket</p>
+        <p class="equitment-price">$199.99</p>
+      </a>
+    </li>
+    <li class="equipment-item">
+      <a href="#">
+        <img src="" alt="Helmet" width="173" height="173">
+        <p>Helmet</p>
+        <p class="equitment-price">$159.99</p>
+      </a>
+    </li>
+  </ul>
+</section>
+
 </main>
 
 <footer class="main-footer">

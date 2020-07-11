@@ -1,10 +1,20 @@
 /* Variables */
 
 :root {
+  --nigtht-dark: #212327;
+  --almost-white: #dadfe6;
+
   --white: #FFFFFF;
   --black :#000000;
 
+  --basic-bright: #ee3b33;
+
   --main-bg: var(--white);
+  --main-txt: var(--nigtht-dark);
+
+  --header-link: var(--nigtht-dark);
+  --header-current-link-border: var(--basic-bright);
+  --header-border: var(--almost-white);
 }
 
 @font-face {
@@ -37,10 +47,11 @@
 /* Global */
 
 body {
-  min-width: 1520px;
+  margin: 0;
   padding: 0;
-  font-family: "Cuprum", Arial, sans-serif;
-  color: var(--basic-navi);
+  min-width: 1520px;
+  font-family: "Oswald", Arial, sans-serif;
+  color: var(--main-txt);
   background-color: var(--main-bg);
 }
 
@@ -51,6 +62,12 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
 .visually-hidden {
@@ -85,4 +102,95 @@ img {
   align-content: start;
 }
 
-  
+/* Header */
+
+.main-header .container {
+}
+
+.main-navigation {
+  display: flex;
+  border-bottom: 1px solid var(--header-border);
+}
+
+.main-logo {
+  width: 100px;
+  height: 100px;
+}
+
+.motorcycle-types-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.motorcycle-types-item a {
+  display: block;
+  padding: 40px 35px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.32px;
+  color: var(--header-link);
+}
+
+.motorcycle-types-item .current {
+  position: relative;
+}
+
+.motorcycle-types-item .current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: var(--header-current-link-border);
+}
+
+.site-menu-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  margin-left: auto;
+  margin-right: 100px;
+  padding: 0;
+  list-style: none;
+}
+
+/* .site-menu-item {
+  margin: auto 0;
+} */
+
+.site-menu-item a {
+  display: block;
+  padding: 40px 17px;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.24px;
+  color: var(--header-link);
+}
+
+.header-search {
+  position: relative;
+}
+
+.header-search a {
+  width: 60px;
+  height: 100px;
+  background: url("../img/icon-search.png") no-repeat center center;
+}
+
+.header-search-form {
+  display: flex;
+  position: absolute;
+  bottom: -20px;
+  right: 0;
+  padding: 20px;
+
+  outline: 1px solid red;
+}
