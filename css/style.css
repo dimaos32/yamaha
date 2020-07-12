@@ -17,6 +17,11 @@
   --header-current-link-border: var(--basic-bright);
   --header-border: var(--almost-white);
   --header-search-form-bg: var(--basic-bright);
+
+  --catalog-link: var(--nigtht-dark);
+  --catalog-link-h: var(--basic-bright);
+  --catalog-current-link-border: var(--basic-bright);
+  --catalog-border: var(--almost-white);
 }
 
 @font-face {
@@ -224,4 +229,67 @@ img {
 .header-search:hover .header-search-form,
 .header-search:focus-within .header-search-form {
   display: flex;
+}
+
+/* Motorcycles catalog */
+
+.motorcycles-catalog-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  border-bottom: 1px solid var(--catalog-border);
+}
+
+.motorcycles-catalog-item {
+  margin: 0 60px;
+}
+
+.motorcycles-catalog-item a {
+  display: flex;
+  flex-direction: column-reverse;
+  padding-top: 25px;
+  padding-bottom: 15px;
+  text-align: center;
+  color: var(--catalog-link);
+  outline: none;
+}
+
+.motorcycles-catalog-item a:hover,
+.motorcycles-catalog-item a:focus {
+  color: var(--catalog-link-h);
+}
+
+.motorcycles-catalog-item a:active {
+  opacity: 0.5;
+}
+
+.motorcycles-catalog-item .current {
+  position: relative;
+}
+
+.motorcycles-catalog-item .current::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 100%;
+  height: 3px;
+  background-color: var(--catalog-current-link-border);
+}
+
+.motorcycles-catalog-item h2 {
+  margin: 0;
+  margin-top: 15px;
+  padding: 0;
+  font-size: 13px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.motorcycles-catalog-item img {
+  margin-right: auto;
+  margin-left: auto;
 }
