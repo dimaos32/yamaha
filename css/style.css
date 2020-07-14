@@ -3,6 +3,7 @@
 :root {
   --nigtht-dark: #212327;
   --dark-grey: #81848a;
+  --medium-grey: #8d9095;
   --light-grey-: #c8c8c8;
   --light-grey: #cacbce;
   --almost-white: #dadfe6;
@@ -54,6 +55,10 @@
 
   --gallery-bg: var(--nigtht-dark);
 
+  --extras-extras-catalog-txt: var(--medium-grey);
+  --extras-extras-catalog-link: var(--nigtht-dark);
+  --extras-extras-catalog-link-h: var(--special-bright);
+  --extras-extras-catalog-link-a: var(--basic-bright);
 
   --motorcycle-color-blue: #5c68b5;
   --motorcycle-color-light-grey: #adacaa;
@@ -772,7 +777,7 @@ img {
 /* view-360deg */
 
 .view-360deg {
-  margin-bottom: 90px;
+  margin-bottom: 75px;
 }
 
 .view-360deg .container {
@@ -789,4 +794,99 @@ img {
   font-weight: 500;
   text-transform: uppercase;
   background: url("../img/icon-view-360deg.png") no-repeat 0 0;
+}
+
+/* Catalog Extras */
+
+.extras-catalog {
+  margin-bottom: 95px;
+}
+
+.accessories-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  margin-bottom: 65px;
+  padding: 0;
+  list-style: none;
+}
+
+.accessories-item {
+  margin: 0 30px;
+}
+
+.accessories-item a {
+  display: block;
+  padding: 15px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  opacity: 0.5;
+  outline: none;
+  color: var(--extras-extras-catalog-link);
+}
+
+.accessories-item a:hover,
+.accessories-item a:focus {
+  opacity: 1;
+  color: var(--extras-extras-catalog-link-h);
+}
+
+.accessories-item a:active {
+  color: var(--extras-extras-catalog-link-a);
+}
+
+.equipment-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.equipment-item {
+  margin: 10px 40px;
+}
+
+.equipment-item-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 210px;
+  min-height: 245px;
+}
+
+.equipment-item-link img {
+  margin: auto;
+}
+
+.equipment-item h3 {
+  margin: 0;
+  margin-bottom: 7px;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--extras-extras-catalog-link);
+}
+
+.equipment-item:hover h3,
+.equipment-item:focus-within h3 {
+  color: var(--extras-extras-catalog-link-h);
+}
+
+.equipment-item:active h3 {
+  color: var(--extras-extras-catalog-link-a);
+}
+
+.equipment-item p {
+  margin: 0;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  color: var(--extras-extras-catalog-txt);
 }
