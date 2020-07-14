@@ -52,6 +52,8 @@
   --feature-link-current: var(--nigtht-dark);
   --feature-link-fill: var(--basic-bright);
 
+  --gallery-bg: var(--nigtht-dark);
+
 
   --motorcycle-color-blue: #5c68b5;
   --motorcycle-color-light-grey: #adacaa;
@@ -752,7 +754,8 @@ img {
 /* Gallery */
 
 .gallery {
-  background: #000;
+  margin-bottom: 40px;
+  background: var(--gallery-bg);
 }
 
 .gallery .container {
