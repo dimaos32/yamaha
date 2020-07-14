@@ -128,7 +128,7 @@ img {
 }
 
 .container {
-  width: 1492px;
+  width: 1520px;
   margin: 0 auto;
   padding: 0 14px;
 }
@@ -747,4 +747,21 @@ img {
 
 .motorcycle-feature-description p:not(:last-of-type) {
   margin-bottom: 55px;
+}
+
+/* Gallery */
+
+.gallery {
+  background: #000;
+}
+
+.gallery .container {
+  display: grid;
+  grid-template-columns: 351px 791px 350px;
+  grid-auto-flow: dense;
+}
+
+.photo-best {
+  grid-column: 2 / 3;
+  grid-row: 1 / 3;
 }
